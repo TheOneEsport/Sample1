@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IRONFORGE GYM | Best Gym in Ranchi</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap');
+    
+    :root {
+      --primary: #FF3B2F;
+      --dark: #0F0F0F;
+      --light: #F5F5F5;
+    }
+    
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: var(--dark);
+      color: var(--light);
+      line-height: 1.6;
+    }
+    
+    header {
+      background: rgba(15,15,15,0.95);
+      position: fixed;
+      width: 100%;
+      z-index: 1000;
+      padding: 1rem 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 3px solid var(--primary);
+    }
+    
+    .logo {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 2.5rem;
+      color: var(--primary);
+      letter-spacing: 2px;
+    }
+    
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 2rem;
+      font-weight: 700;
+      transition: color 0.3s;
+    }
+    nav a:hover { color: var(--primary); }
+    
+    .hero {
+      height: 100vh;
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)), url('https://source.unsplash.com/random/1920x1080/?gym,workout') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+    }
+    
+    .hero-content {
+      max-width: 900px;
+      padding: 2rem;
+    }
+    
+    .hero h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 5.5rem;
+      line-height: 1;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+    }
+    
+    .hero p {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    
+    .cta-button {
+      background: var(--primary);
+      color: white;
+      padding: 1rem 3rem;
+      font-size: 1.3rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.3s;
+      text-decoration: none;
+      display: inline-block;
+    }
+    
+    .cta-button:hover {
+      background: #fff;
+      color: var(--dark);
+      transform: scale(1.05);
+    }
+    
+    section {
+      padding: 100px 5%;
+    }
+    
+    h2 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 3.5rem;
+      text-align: center;
+      margin-bottom: 3rem;
+      color: var(--primary);
+    }
+    
+    .classes-grid, .trainers-grid, .testimonials {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    
+    .card {
+      background: #1A1A1A;
+      border-radius: 15px;
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+    
+    .card:hover {
+      transform: translateY(-15px);
+    }
+    
+    .card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+    
+    .card-content {
+      padding: 1.5rem;
+    }
+    
+    .pricing {
+      background: linear-gradient(135deg, #1A1A1A, #0F0F0F);
+      text-align: center;
+    }
+    
+    .price-card {
+      background: #111;
+      border: 3px solid var(--primary);
+      border-radius: 20px;
+      padding: 2rem;
+      max-width: 380px;
+      margin: 0 auto;
+    }
+    
+    .price {
+      font-size: 4rem;
+      font-weight: bold;
+      color: var(--primary);
+    }
+    
+    footer {
+      background: #0A0A0A;
+      text-align: center;
+      padding: 3rem 5%;
+    }
+    
+    .location {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">IRONFORGE</div>
+    <nav>
+      <a href="#classes">Classes</a>
+      <a href="#trainers">Trainers</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Join Now</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>FORGE YOUR STRONGEST SELF</h1>
+      <p>Ranchi's Most Powerful Gym • 24×7 Access • World-Class Equipment • Expert Trainers</p>
+      <a href="#pricing" class="cta-button">GET STARTED TODAY - FREE TRIAL</a>
+      <p style="margin-top: 2rem; font-size: 1.1rem;">📍 Bariatu / Kanke Road, Ranchi | Call: +91 98765 43210</p>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>WHY IRONFORGE IS DIFFERENT</h2>
+    <p style="max-width: 800px; margin: 0 auto 4rem; text-align:center; font-size:1.2rem;">
+      Located in the heart of Ranchi, IronForge Gym is not just a gym — it's a transformation zone. 
+      With premium equipment, certified trainers, and a motivating community, we help you build strength, confidence, and results that last.
+    </p>
+  </section>
+
+  <!-- Classes -->
+  <section id="classes" style="background:#1A1A1A;">
+    <h2>OUR CLASSES</h2>
+    <div class="classes-grid">
+      <div class="card">
+        <img src="https://source.unsplash.com/random/600x400/?weightlifting" alt="Strength Training">
+        <div class="card-content">
+          <h3>Strength & Powerlifting</h3>
+          <p>Build raw power with Olympic lifts and heavy compound movements.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/random/600x400/?crossfit" alt="CrossFit">
+        <div class="card-content">
+          <h3>CrossFit & Functional</h3>
+          <p>High-intensity workouts that burn fat and build endurance.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/random/600x400/?zumba" alt="Zumba">
+        <div class="card-content">
+          <h3>Zumba & Cardio Dance</h3>
+          <p>Fun, energetic group classes to torch calories.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trainers -->
+  <section id="trainers">
+    <h2>MEET OUR COACHES</h2>
+    <div class="trainers-grid">
+      <div class="card">
+        <img src="https://source.unsplash.com/random/600x400/?personaltrainer,male" alt="Trainer 1">
+        <div class="card-content">
+          <h3>Rahul Sharma</h3>
+          <p>Certified Strength Coach • 8+ years • Former Powerlifter</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/random/600x400/?personaltrainer,female" alt="Trainer 2">
+        <div class="card-content">
+          <h3>Priya Singh</h3>
+          <p>Zumba & Yoga Expert • Nutrition Coach</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="pricing">
+    <h2>CHOOSE YOUR PLAN</h2>
+    <div class="price-card">
+      <h3>MONTHLY MEMBERSHIP</h3>
+      <div class="price">₹1,499<span style="font-size:1rem;">/month</span></div>
+      <ul style="list-style:none; margin:2rem 0; text-align:left;">
+        <li>✅ 24×7 Gym Access</li>
+        <li>✅ All Group Classes</li>
+        <li>✅ Locker & Shower</li>
+        <li>✅ Free Trial Session</li>
+      </ul>
+      <a href="#" class="cta-button" style="width:100%; text-align:center;">JOIN NOW</a>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials" style="background:#1A1A1A;">
+    <h2>REAL RESULTS FROM RANCHI</h2>
+    <div class="testimonials" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+      <div class="card">
+        <div class="card-content">
+          <p>"Lost 18 kg in 4 months! Best gym in Ranchi hands down."</p>
+          <strong>— Amit Kumar, Kanke</strong>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <p>"Trainers are motivating and equipment is top class. Highly recommended!"</p>
+          <strong>— Sneha Verma, Bariatu</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section style="text-align:center; background: linear-gradient(#FF3B2F, #C8102E); padding: 120px 5%;">
+    <h2 style="color:white; font-size:4rem;">READY TO TRANSFORM?</h2>
+    <p style="color:white; font-size:1.5rem; margin:1.5rem 0;">Book your FREE trial today. Limited slots available.</p>
+    <a href="tel:+919876543210" class="cta-button" style="background:white; color:#000; font-size:1.8rem;">CALL NOW: +91 98765 43210</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p><strong>IRONFORGE GYM Ranchi</strong></p>
+    <p class="location">Near Bariatu Road / Opposite XYZ Mall, Ranchi, Jharkhand 834009</p>
+    <p>© 2026 All Rights Reserved | Open 24 Hours</p>
+  </footer>
+
+</body>
+</html>
